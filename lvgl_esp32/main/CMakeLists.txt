@@ -1,0 +1,14 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "st7789v.c"
+        "lvgl_port.c"
+        "ui/ui_mini.c"
+    INCLUDE_DIRS
+        "."
+        "ui"
+    REQUIRES
+        lvgl
+        driver
+        freertos
+)
